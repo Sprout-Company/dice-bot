@@ -1,11 +1,17 @@
 {
   "name": "casino-bot",
-  "version": "1.0.0", 
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.5",
+    "lowdb": "^7.0.1",
+    "telegraf": "^4.16.3"
+  }
 }
