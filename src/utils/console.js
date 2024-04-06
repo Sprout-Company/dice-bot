@@ -1,5 +1,5 @@
 
-const { green, red, cyan } = require('colors/safe');
+const colors = require('colors/safe.js');
 
 /**
  * Custom terminal printer
@@ -11,34 +11,34 @@ const log = (type, message) => {
   
   switch (type) {
     case 'w': {
-      print = cyan(' ... ') + message;
+      print = colors.cyan(' ... ') + message;
       break;
     }
     case 'wx': {
-      print = cyan(' ... ' + message);
+      print = colors.cyan(' ... ' + message);
       break;
     }
     case 'e': {
-      print = red('  ×  ') + message;
+      print = colors.red('  ×  ') + message;
       break;
     }
     case 'ex': {
-      print = red('  ×  ' + message);
+      print = colors.red('  ×  ' + message);
       break;
     }
     case 's': {
-      print = green('  ✓  ') + message;
+      print = colors.green('  ✓  ') + message;
       break;
     }
     case 'sx': {
-      print = green('  ✓  ' + message);
+      print = colors.green('  ✓  ' + message);
       break;
     }
   }
     
     // Print 
     console.log(print);
-}
+} 
 
 module.exports = {
   log,
