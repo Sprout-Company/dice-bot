@@ -6,7 +6,6 @@ const { log } = require('./utils/console.js');
 
 // Get bot routers
 require('./router/start.js');
-require('./router/menu.js');
 
 // Main function 
 const main = async () => {
